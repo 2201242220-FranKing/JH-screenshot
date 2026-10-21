@@ -43,9 +43,9 @@ cat > "$APP_DIR/Contents/Info.plist" <<PLIST
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>CFBundleShortVersionString</key>
-  <string>1.0.0</string>
+  <string>2.0.0</string>
   <key>CFBundleVersion</key>
-  <string>1</string>
+  <string>2</string>
   <key>CFBundleIconFile</key>
   <string>AppIcon</string>
   <key>LSUIElement</key>
@@ -60,6 +60,10 @@ PLIST
 cp main.py "$APP_DIR/Contents/Resources/main.py"
 cp config.example.json "$APP_DIR/Contents/Resources/config.example.json"
 cp "$ICON" "$APP_DIR/Contents/Resources/AppIcon.icns"
+# 菜单栏小图标源图（首次运行生成 44px 菜单图标用）
+if [ -f assets/icon.png ]; then
+  cp assets/icon.png "$APP_DIR/Contents/Resources/menu_icon.png"
+fi
 
 # 4. 启动器（自动定位 Python 的 site-packages 并注入 PYTHONPATH）
 cat > "$APP_DIR/Contents/MacOS/launcher" <<'LAUNCHER'

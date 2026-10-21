@@ -1,7 +1,11 @@
 {
   "hotkey": "cmd+shift+A",
+  "hotkey_full": "alt+cmd+A",
+  "hotkey_window": "alt+cmd+W",
   "save_dir": "~/Desktop/截图",
   "auto_copy": true,
   "pin_on_space": true,
-  "play_sound": true
+  "play_sound": true,
+  "beautify": true,
+  "beautify_background": 0
 }
