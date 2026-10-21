@@ -38,7 +38,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone <你的仓库地址> 小金截图
+git clone git@github.com:2201242220-FranKing/JH-screenshot.git 小金截图
 cd 小金截图
 ```
 
