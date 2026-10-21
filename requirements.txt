@@ -1,0 +1,13 @@
+# 核心依赖（精确锁定，已在 macOS 12.6 + Python 3.9 实测通过）
+pynput==1.7.6
+rumps==0.4.0
+pillow==11.3.0
+
+# PyObjC 全家桶（钉图窗口/截图合成需要）。
+# 10.3.2 提供 Python 3.9~3.12 的预编译 wheel，无需 Xcode 编译。
+# 若你的 Python 版本更高导致安装失败，见 README「常见问题 Q1」。
+pyobjc-core==10.3.2
+pyobjc-framework-Cocoa==10.3.2
+pyobjc-framework-Quartz==10.3.2
+pyobjc-framework-ApplicationServices==10.3.2
+pyobjc-framework-CoreText==10.3.2

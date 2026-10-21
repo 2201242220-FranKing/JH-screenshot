@@ -1,0 +1,14 @@
+# 系统与缓存
+.DS_Store
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# 运行期文件（生成在用户目录 ~/.localsnap/）
+*.log
+config.json
+!config.example.json
+
+# 本地设计过程文件（图标成品在 assets/）
+.creative-design/
